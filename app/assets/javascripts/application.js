@@ -13,4 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+
+var para = document.getElementById("para");
+para.innerHTLM = "hello world";
