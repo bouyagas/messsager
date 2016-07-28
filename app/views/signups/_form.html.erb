@@ -1,6 +1,9 @@
+
+<div class="form-inline">
+
 <%= form_for(@signup) do |f| %>
   <% if @signup.errors.any? %>
-    <div id="error_explanation">
+    <div id="error_explanation" >
       <h2><%= pluralize(@signup.errors.count, "error") %> prohibited this signup from being saved:</h2>
 
       <ul>
@@ -11,19 +14,23 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field" class="form-group" >
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
-  <div class="field">
+  <div class="field" class="form-group">
     <%= f.label :email %><br>
     <%= f.text_field :email %>
   </div>
-  <div class="field">
+  <div class="field" class="form-group">
     <%= f.label :password %><br>
     <%= f.text_field :password %>
   </div>
-  <div class="actions">
+  <div class="actions" class="btn btn-default">
     <%= f.submit %>
   </div>
 <% end %>
+
+
+
+</div>

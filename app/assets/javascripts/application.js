@@ -11,8 +11,6 @@
 // about supported directives.
 //
 //= require jquery
+//= require bootstrap-sprockets
 //= require jquery_ujs
 //= require turbolinks
-
-var para = document.getElementById("para");
-para.innerHTLM = "hello world";

@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
  root 'main_page#index'
 
-  resources :signups
 
+  resources :signups
   get 'signup' => 'signups#index'
 
 
